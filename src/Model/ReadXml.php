@@ -1,9 +1,8 @@
-<?php 
+<?php
 
-namespace Thangphu\UnLock\Controller;
+namespace Thangphu\UnLock\Models;
 
 class ReadXml
 {
 
 }
-?>
