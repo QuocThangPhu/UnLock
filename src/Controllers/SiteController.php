@@ -15,4 +15,10 @@ class SiteController
     {
         return 'handling submittid';
     }
+
+    public function sum($number1, $number2)
+    {
+        $finalnumber = $number1 + $number2;
+        return $finalnumber;
+    }
 }

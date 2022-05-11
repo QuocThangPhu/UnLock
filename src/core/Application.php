@@ -14,17 +14,17 @@ class Application
     public static string $ROOT_DIR;
 
     /**
-     * @var \Thangphu\UnLock\core\Router
+     * @var Router
      */
     public Router $router;
 
     /**
-     * @var \Thangphu\UnLock\core\Request
+     * @var Request
      */
     public Request $request;
 
     /**
-     * @var \Thangphu\UnLock\core\Response
+     * @var Response
      */
     public Response $response;
 

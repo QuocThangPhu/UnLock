@@ -11,7 +11,4 @@ use Thangphu\UnLock\Controllers\SiteController;
     $application->router->get('/','hello');
     $application->router->get('/contact',[new SiteController(), 'contact']);
     $application->router->post('/contact', [new SiteController(), 'handleContact']);
-
-
     $application->run();
-?>
