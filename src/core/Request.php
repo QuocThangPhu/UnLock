@@ -4,6 +4,9 @@ namespace Thangphu\UnLock\core;
 
 class Request
 {
+    /**
+     * @return string
+     */
     public function getPath()
     {
         $path = $_SERVER['REQUEST_URI'] ?? '/';
@@ -13,7 +16,10 @@ class Request
         }
         return substr($path, 0, $position);
     }
-    
+
+    /**
+     * @return string
+     */
     public function getMethod()
     {
         return strtolower($_SERVER['REQUEST_METHOD']);

@@ -43,7 +43,7 @@ class Router
     }
 
     /**
-     * @return array|false|mixed|string|string[]
+     * @return string|string[]
      */
     public function resolve()
     {
@@ -62,7 +62,7 @@ class Router
 
     /**
      * @param $view
-     * @return array|false|string|string[]
+     * @return string|string[]
      */
     public function renderView($view)
     {
@@ -78,7 +78,7 @@ class Router
     }
 
     /**
-     * @return false|string
+     * @return string
      */
     protected function layoutContent()
     {
@@ -89,7 +89,7 @@ class Router
 
     /**
      * @param $view
-     * @return false|string
+     * @return string
      */
     protected function renderOnlyView($view)
     {
