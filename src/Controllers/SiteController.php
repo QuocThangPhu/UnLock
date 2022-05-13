@@ -3,15 +3,24 @@
 namespace Thangphu\UnLock\Controllers;
 
 use Thangphu\UnLock\core\Application;
+use Thangphu\UnLock\core\Controller;
 
-class SiteController
+class SiteController extends Controller
 {
+
+    public function home()
+    {
+        $params = [
+            'name' => "Sayno"
+        ];
+        return $this->render('home', $params);
+    }
     /**
      * @return string|string[]
      */
     public function contact()
     {
-        return Application::$app->router->renderView('contact');
+        return $this->render('contact');
     }
 
     /**
@@ -27,9 +36,9 @@ class SiteController
      * @param $number2
      * @return string
      */
-    public function sum($number1, $number2)
-    {
-        $finalnumber = $number1 + $number2;
-        return $finalnumber;
-    }
+//    public function sum($number1, $number2)
+//    {
+//        $finalnumber = $number1 + $number2;
+//        return $finalnumber;
+//    }
 }
