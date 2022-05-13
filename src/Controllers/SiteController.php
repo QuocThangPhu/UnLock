@@ -4,6 +4,7 @@ namespace Thangphu\UnLock\Controllers;
 
 use Thangphu\UnLock\core\Application;
 use Thangphu\UnLock\core\Controller;
+use Thangphu\UnLock\core\Request;
 
 class SiteController extends Controller
 {
@@ -26,8 +27,9 @@ class SiteController extends Controller
     /**
      * @return string
      */
-    public function handleContact()
+    public function handleContact(Request $request)
     {
+        $body = $request->getBody();
         return 'handling submittid';
     }
 
