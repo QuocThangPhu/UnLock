@@ -15,8 +15,8 @@ class RoadFactory implements TransportInterface
      */
     public function deliver(): VehicleIntreface
     {
-        $ramdom = rand(0,2);
-        switch ($ramdom){
+        $randomNumber = rand(0,2);
+        switch ($randomNumber){
             case 0:
                 return new Truck();
             case 1:
