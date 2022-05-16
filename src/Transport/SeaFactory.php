@@ -9,8 +9,8 @@ class SeaFactory implements TransportInterface
      */
     public function deliver(): VehicleIntreface
     {
-        $ramdom = rand(1,3);
-        switch ($ramdom){
+        $randomNumber = rand(1,3);
+        switch ($randomNumber){
             case 1:
                 return new Ship();
             case 2:
