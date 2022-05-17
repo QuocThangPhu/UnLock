@@ -5,6 +5,7 @@ namespace Thangphu\UnLock\core;
 use Thangphu\UnLock\core\Request;
 use Thangphu\UnLock\core\Router;
 use Thangphu\UnLock\core\Response;
+use Thangphu\UnLock\core\Controller;
 
 class Application
 {
@@ -34,6 +35,11 @@ class Application
     public static Application $app;
 
     /**
+     * @var Controller
+     */
+    public Controller $controller;
+
+    /**
      * @param $rootPath
      */
     public function __construct($rootPath)
@@ -51,5 +57,18 @@ class Application
     public function run(): void
     {
         echo $this->router->resolve();
+    }
+
+    /**
+     * @return Controller
+     */
+    public function getController(): Controller
+    {
+        return $this->controller;
+    }
+
+    public function setController(Controller $controller): void
+    {
+        $this->controller = $controller;
     }
 }
